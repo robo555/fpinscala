@@ -150,6 +150,8 @@ object Stream {
 
   val ones: Stream[Int] = cons(1, ones)
 
+  val twos: Stream[Int] = cons(2, twos)
+
   def from(n: Int): Stream[Int] = cons(n, from(n + 1))
 
   def constant[A](a: A): Stream[A] = cons(a, constant(a))
